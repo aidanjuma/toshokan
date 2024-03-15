@@ -1,12 +1,10 @@
 import fs from "fs";
 import path from "path";
-import Constants from "../../src/utils/constants";
-import Downloader from "../../src/utils/downloader";
-import { FileType } from "../models/types";
+import Constants from "../src/utils/constants";
+import Downloader from "../src/utils/downloader";
+import { FileType } from "../src/models/types";
 
 jest.setTimeout(120000);
-
-// run: yarn test --watch --verbose false downloader.test.ts
 
 describe("Downloader Utility Class", () => {
   test("Test: Latest file's presence; download if not.", async () => {

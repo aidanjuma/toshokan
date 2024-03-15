@@ -5,7 +5,10 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
-    "test": "jest"
+    "test": "jest",
+    "test:downloader": "jest ./tests/downloader.test.ts",
+    "test:jmdict": "jest ./tests/jmdict.test.ts",
+    "test:xml": "jest ./tests/xml.test.ts"
   },
   "author": {
     "name": "Aidan Juma",
